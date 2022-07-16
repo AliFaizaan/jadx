@@ -27,6 +27,9 @@ import jadx.gui.utils.NLS;
 
 public class FileDialog {
 
+	private static final List<String> OPEN_FILES_EXTS = Arrays.asList(
+			"apk", "dex", "jar", "class", "smali", "zip", "aar", "arsc", "jadx.kts");
+
 	public enum OpenMode {
 		OPEN,
 		ADD,
@@ -96,7 +99,7 @@ public class FileDialog {
 		switch (mode) {
 			case OPEN:
 			case ADD:
-				fileExtList = new ArrayList<>(Arrays.asList("apk", "dex", "jar", "class", "smali", "zip", "aar", "arsc"));
+				fileExtList = new ArrayList<>(OPEN_FILES_EXTS);
 				if (mode == OpenMode.OPEN) {
 					fileExtList.addAll(Arrays.asList(JadxProject.PROJECT_EXTENSION, "aab"));
 					title = NLS.str("file.open_title");

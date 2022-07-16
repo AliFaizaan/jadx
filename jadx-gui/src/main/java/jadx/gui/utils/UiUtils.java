@@ -48,6 +48,8 @@ public class UiUtils {
 
 	public static final ImageIcon ICON_STATIC = openSvgIcon("nodes/staticMark");
 	public static final ImageIcon ICON_FINAL = openSvgIcon("nodes/finalMark");
+	public static final ImageIcon FOLDER_ICON = UiUtils.openSvgIcon("nodes/folder");
+	public static final ImageIcon FILE_ICON = UiUtils.openSvgIcon("nodes/file_any_type");
 
 	/**
 	 * The minimum about of memory in bytes we are trying to keep free, otherwise the application may
