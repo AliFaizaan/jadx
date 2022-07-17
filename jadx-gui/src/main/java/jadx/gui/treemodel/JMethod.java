@@ -22,8 +22,6 @@ import jadx.gui.utils.UiUtils;
 
 public class JMethod extends JNode {
 	private static final long serialVersionUID = 3834526867464663751L;
-
-	private static final ImageIcon ICON_METHOD = UiUtils.openSvgIcon("nodes/method");
 	private static final ImageIcon ICON_METHOD_ABSTRACT = UiUtils.openSvgIcon("nodes/abstractMethod");
 	private static final ImageIcon ICON_METHOD_PRIVATE = UiUtils.openSvgIcon("nodes/privateMethod");
 	private static final ImageIcon ICON_METHOD_PROTECTED = UiUtils.openSvgIcon("nodes/protectedMethod");
@@ -65,7 +63,7 @@ public class JMethod extends JNode {
 	@Override
 	public Icon getIcon() {
 		AccessInfo accessFlags = mth.getAccessFlags();
-		Icon icon = ICON_METHOD;
+		Icon icon = UiUtils.ICON_METHOD;
 		if (accessFlags.isAbstract()) {
 			icon = ICON_METHOD_ABSTRACT;
 		}

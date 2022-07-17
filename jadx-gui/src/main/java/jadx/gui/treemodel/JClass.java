@@ -26,7 +26,6 @@ import jadx.gui.utils.UiUtils;
 public class JClass extends JLoadableNode {
 	private static final long serialVersionUID = -1239986875244097177L;
 
-	private static final ImageIcon ICON_CLASS = UiUtils.openSvgIcon("nodes/class");
 	private static final ImageIcon ICON_CLASS_ABSTRACT = UiUtils.openSvgIcon("nodes/abstractClass");
 	private static final ImageIcon ICON_CLASS_PUBLIC = UiUtils.openSvgIcon("nodes/publicClass");
 	private static final ImageIcon ICON_CLASS_PRIVATE = UiUtils.openSvgIcon("nodes/privateClass");
@@ -155,7 +154,7 @@ public class JClass extends JLoadableNode {
 		if (accessInfo.isPublic()) {
 			return ICON_CLASS_PUBLIC;
 		}
-		return ICON_CLASS;
+		return UiUtils.ICON_CLASS;
 	}
 
 	@Override

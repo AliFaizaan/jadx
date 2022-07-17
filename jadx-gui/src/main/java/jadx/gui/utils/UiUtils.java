@@ -46,6 +46,13 @@ import jadx.gui.ui.codearea.AbstractCodeArea;
 public class UiUtils {
 	private static final Logger LOG = LoggerFactory.getLogger(UiUtils.class);
 
+	public static final ImageIcon ICON_PACKAGE = UiUtils.openSvgIcon("nodes/package");
+	public static final ImageIcon ICON_CLASS = UiUtils.openSvgIcon("nodes/class");
+	public static final ImageIcon ICON_METHOD = UiUtils.openSvgIcon("nodes/method");
+	public static final ImageIcon ICON_FIELD = UiUtils.openSvgIcon("nodes/field");
+	public static final ImageIcon ICON_PROPERTY = UiUtils.openSvgIcon("nodes/property");
+	public static final ImageIcon ICON_PARAMETER = UiUtils.openSvgIcon("nodes/parameter");
+
 	public static final ImageIcon ICON_STATIC = openSvgIcon("nodes/staticMark");
 	public static final ImageIcon ICON_FINAL = openSvgIcon("nodes/finalMark");
 	public static final ImageIcon FOLDER_ICON = UiUtils.openSvgIcon("nodes/folder");

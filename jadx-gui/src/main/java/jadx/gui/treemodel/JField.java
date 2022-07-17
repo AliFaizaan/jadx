@@ -21,7 +21,6 @@ import jadx.gui.utils.UiUtils;
 public class JField extends JNode {
 	private static final long serialVersionUID = 1712572192106793359L;
 
-	private static final ImageIcon ICON_FLD_DEF = UiUtils.openSvgIcon("nodes/field");
 	private static final ImageIcon ICON_FLD_PRI = UiUtils.openSvgIcon("nodes/privateField");
 	private static final ImageIcon ICON_FLD_PRO = UiUtils.openSvgIcon("nodes/protectedField");
 	private static final ImageIcon ICON_FLD_PUB = UiUtils.openSvgIcon("nodes/publicField");
@@ -65,7 +64,7 @@ public class JField extends JNode {
 	@Override
 	public Icon getIcon() {
 		AccessInfo af = field.getAccessFlags();
-		OverlayIcon icon = UiUtils.makeIcon(af, ICON_FLD_PUB, ICON_FLD_PRI, ICON_FLD_PRO, ICON_FLD_DEF);
+		OverlayIcon icon = UiUtils.makeIcon(af, ICON_FLD_PUB, ICON_FLD_PRI, ICON_FLD_PRO, UiUtils.ICON_FIELD);
 		return icon;
 	}
 
